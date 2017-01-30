@@ -84,3 +84,5 @@ merged_data$subject <- as.factor(merged_data$subject)
 
 merged_data.melted <- melt(merged_data, id = c("subject", "activity"))
 merged_data.mean <- dcast(merged_data, subject + activity ~ variable, mean)
+
+write.table(merged_data.mean, "tidy.txt", row.names = FALSE, quote = FALSE)
