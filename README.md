@@ -13,6 +13,8 @@ There are two sub folders containg the test and training data on  the subject te
 train, x and y features.
 
 Subsequent steps include the following.
+
+
 1. Merges the training and the test sets to create one data set.
 
 
